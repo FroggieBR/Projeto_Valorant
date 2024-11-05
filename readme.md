@@ -1,4 +1,3 @@
-
 # Django REST Framework Project
 
 Este é um projeto básico de API desenvolvido com Django e Django REST Framework, criado para fins de estudo. O projeto inclui endpoints para gerenciar `Mapa`, `Personagem`, `Arma` e `Partida`, onde é possível realizar operações CRUD (Create, Read, Update, Delete) em cada um desses modelos.
@@ -82,6 +81,7 @@ Aqui estão as principais rotas disponíveis na API. Todas as rotas suportam as 
 ### Endpoints
 
 1. **Mapa**
+
    - `GET /api/mapas/` - Lista todos os mapas.
    - `POST /api/mapas/` - Cria um novo mapa.
    - `GET /api/mapas/<id>/` - Retorna os detalhes de um mapa específico.
@@ -89,6 +89,7 @@ Aqui estão as principais rotas disponíveis na API. Todas as rotas suportam as 
    - `DELETE /api/mapas/<id>/` - Exclui um mapa específico.
 
 2. **Personagem**
+
    - `GET /api/personagens/` - Lista todos os personagens.
    - `POST /api/personagens/` - Cria um novo personagem.
    - `GET /api/personagens/<id>/` - Retorna os detalhes de um personagem específico.
@@ -96,6 +97,7 @@ Aqui estão as principais rotas disponíveis na API. Todas as rotas suportam as 
    - `DELETE /api/personagens/<id>/` - Exclui um personagem específico.
 
 3. **Arma**
+
    - `GET /api/armas/` - Lista todas as armas.
    - `POST /api/armas/` - Cria uma nova arma.
    - `GET /api/armas/<id>/` - Retorna os detalhes de uma arma específica.
