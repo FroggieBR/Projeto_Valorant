@@ -7,6 +7,13 @@ class Mapa(models.Model):
     descricao = models.TextField()
     imagem = models.ImageField(upload_to='mapas', null=True, blank=True)
 
+    class Meta:
+        verbose_name = 'Mapa'
+        verbose_name_plural = 'Mapas'
+        
+    def __str__(self):
+        return self.nome
+    
 class Personagem(models.Model):
     class Funcao(models.TextChoices):
         DUELISTA = 'DUELISTA', 'Duelista'
@@ -25,6 +32,12 @@ class Personagem(models.Model):
     origem = models.CharField(max_length = 255)
     imagem = models.ImageField(upload_to='personagens', null=True, blank=True)
 
+    class Meta:
+        verbose_name = 'Personagem'
+        verbose_name_plural = 'Personagens'
+    
+    def __str__(self):
+        return self.nome
 class Arma(models.Model):
     class Tipo(models.TextChoices):
         PISTOLA = 'PISTOLA', 'Pistola'
